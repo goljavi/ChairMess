@@ -40,6 +40,9 @@ private:
 	UFUNCTION(BlueprintCallable)
 		FHitResult ObjectToGrab();
 
+	UFUNCTION(BlueprintCallable)
+		bool isResultValid(FHitResult hit);
+
 	UPhysicsHandleComponent* physicsHandle;
 
 };

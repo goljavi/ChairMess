@@ -73,3 +73,9 @@ void AMainCharacter::RotateCamera(float axis)
 {
 	AddControllerPitchInput(axis);
 }
+
+bool AMainCharacter::isResultValid(FHitResult hit)
+{
+	if (hit.GetActor()) return true;
+	return false;
+}
